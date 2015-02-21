@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "568968a5975391154351a8c8b53ed387",
+    "hash": "90df062c90c93dda27aa18a00be31dac",
     "packages": [
         {
             "name": "symfony/event-dispatcher",
@@ -117,44 +117,100 @@
             "time": "2015-01-08 13:00:41"
         },
         {
-            "name": "yohang/finite",
-            "version": "1.0.3",
+            "name": "symfony/property-access",
+            "version": "v2.6.4",
+            "target-dir": "Symfony/Component/PropertyAccess",
             "source": {
                 "type": "git",
-                "url": "https://github.com/yohang/Finite.git",
-                "reference": "252476cdb20e6f9d93e588db1c1ec73d1619400d"
+                "url": "https://github.com/symfony/PropertyAccess.git",
+                "reference": "9c0b67ea9c1a2b59cc7afae9177cd3c5ca5ac608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yohang/Finite/zipball/252476cdb20e6f9d93e588db1c1ec73d1619400d",
-                "reference": "252476cdb20e6f9d93e588db1c1ec73d1619400d",
+                "url": "https://api.github.com/repos/symfony/PropertyAccess/zipball/9c0b67ea9c1a2b59cc7afae9177cd3c5ca5ac608",
+                "reference": "9c0b67ea9c1a2b59cc7afae9177cd3c5ca5ac608",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "symfony/event-dispatcher": ">=2.1,<3.0",
-                "symfony/options-resolver": ">=2.1,<3.0"
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\PropertyAccess\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony PropertyAccess Component",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "access",
+                "array",
+                "extraction",
+                "index",
+                "injection",
+                "object",
+                "property",
+                "property path",
+                "reflection"
+            ],
+            "time": "2015-01-25 04:39:26"
+        },
+        {
+            "name": "yohang/finite",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yohang/Finite.git",
+                "reference": "c37d98e33c5283234a7d0ab6adaf99c6ac59c0f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yohang/Finite/zipball/c37d98e33c5283234a7d0ab6adaf99c6ac59c0f6",
+                "reference": "c37d98e33c5283234a7d0ab6adaf99c6ac59c0f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/options-resolver": "~2.1",
+                "symfony/property-access": "~2.3"
             },
             "require-dev": {
-                "pdepend/pdepend": "*",
-                "phpmd/phpmd": "*",
-                "phpunit/phpunit": ">=3.7,<4.0",
-                "pimple/pimple": ">=1.0,<2.0",
-                "symfony/dependency-injection": ">=2.1,<3.0",
-                "symfony/framework-bundle": ">=2.1,<3.0",
-                "symfony/security": ">=2.1,<3.0",
-                "twig/twig": ">=1.13,<2.0"
+                "phpunit/phpunit": "~3.7",
+                "pimple/pimple": "~1.0",
+                "symfony/dependency-injection": "~2.1",
+                "symfony/framework-bundle": "~2.1",
+                "symfony/security": "~2.1",
+                "twig/twig": "~1.13"
             },
             "suggest": {
                 "pimple/pimple": "Needed for use with PimpleFactory",
-                "symfony/dependency-injection": "Needed for use with Symfony DependencyInjection Factory",
                 "symfony/security": "Needed for using SecurityAwareStateMachine",
                 "symfony/yaml": "Yaml allows you to define your State graph in YAML"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -171,20 +227,31 @@
                     "name": "Yohan Giarelli",
                     "email": "yohan@giarel.li",
                     "homepage": "http://yohan.giarel.li"
+                },
+                {
+                    "name": "Finite contributors",
+                    "homepage": "https://github.com/yohang/Finite/graphs/contributors"
                 }
             ],
             "description": "A simple PHP5.3+ Finite State Machine",
             "homepage": "https://github.com/yohang/Finite",
             "keywords": [
-                "statemachine"
+                "bundle",
+                "state",
+                "statemachine",
+                "symfony",
+                "transition",
+                "workflow"
             ],
-            "time": "2014-05-05 08:08:03"
+            "time": "2014-12-11 10:41:06"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "yohang/finite": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
