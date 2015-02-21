@@ -1,5 +1,6 @@
 {
     "require": {
-        "yohang/finite": "dev-master"
+        "yohang/finite": "dev-master",
+        "pimple/pimple": "~3.0"
     }
 }
